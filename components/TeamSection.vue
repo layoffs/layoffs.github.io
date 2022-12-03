@@ -16,7 +16,7 @@
 				</span>
 			</span>
 		  </div>
-		  <div class="flex flex-wrap -m-4">
+		  <div class="md:flex md:flex-wrap md:-m-4">
 			<div 
 			  v-for="(person, key) in team"			  
 			  :key="key"

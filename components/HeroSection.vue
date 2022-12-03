@@ -21,7 +21,7 @@
           src="https://layoffvd.com.br/slides/slides-export.pdf" 
           width="500" 
           height="395" 
-          class="object-cover object-center rounded"
+          class="object-cover object-center rounded max-w-full"
           type="application/pdf">
       </div>
     </div>
