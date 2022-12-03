@@ -3,7 +3,7 @@ const globalMetadata = {
   title: 'Layoff: Viva Decora',
   canonical: 'https://layoffvd.com.br',
   image: {
-    path: '/static/screenshot.png',
+    path: '/screenshot.png',
     width: 1200,
     height: 630
   }
