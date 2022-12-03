@@ -63,5 +63,7 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+  // Define target https://nuxtjs.org/pt/announcements/going-full-static/
+  target: 'static'
 }
