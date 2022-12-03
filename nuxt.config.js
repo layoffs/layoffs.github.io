@@ -1,17 +1,36 @@
+const globalMetadata = {
+  description: 'A Viva Decora, sucesso em SEO, portal de decoração mais acessado da América Latina desligou 15 funcionários de uma só vez em Novembro de 2022.',
+  title: 'Layoff: Viva Decora',
+  canonical: 'https://layoffvd.com.br',
+  image: {
+    path: '/static/screenshot.png',
+    width: 1200,
+    height: 630
+  }
+}
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Layoff Viva Decora',
+    title: globalMetadata.title,
     htmlAttrs: {
       lang: 'pt',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'canonical', name: 'canonical', content: globalMetadata.canonical },
+      { hid: 'og:url', name: 'og:url', content: globalMetadata.canonical },
+      { hid: 'og:image', name: 'og:image', content: `${globalMetadata.canonical}${globalMetadata.image.path}` },
+      { hid: 'og:imageWidth', name: 'og:imageWidth', content: globalMetadata.image.width },
+      { hid: 'og:imageHeight', name: 'og:imageHeight', content: globalMetadata.image.height },
+      { hid: 'og:image', name: 'og:image', content: `${globalMetadata.canonical}${globalMetadata.image.path}` },            
+      { hid: 'og:title', name: 'og:title', content: globalMetadata.title },
+      { hid: 'description', name: 'description', content: globalMetadata.description },
+      { hid: 'og:description', name: 'og:description', content: globalMetadata.description },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
