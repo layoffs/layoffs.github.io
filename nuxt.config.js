@@ -21,7 +21,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'canonical', name: 'canonical', content: globalMetadata.canonical },
       { hid: 'og:url', name: 'og:url', content: globalMetadata.canonical },
-      { hid: 'og:image', name: 'og:image', content: `${globalMetadata.canonical}${globalMetadata.image.path}` },
+      { hid: 'og:image', name: 'image', property: 'og:image', content: `${globalMetadata.canonical}${globalMetadata.image.path}` },
       { hid: 'og:imageWidth', name: 'og:imageWidth', content: globalMetadata.image.width },
       { hid: 'og:imageHeight', name: 'og:imageHeight', content: globalMetadata.image.height },
       { hid: 'og:image', name: 'og:image', content: `${globalMetadata.canonical}${globalMetadata.image.path}` },            
