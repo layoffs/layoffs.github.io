@@ -4,6 +4,7 @@
     <HeroSection/>
     <TeamSection :team="team" />
     <ResultsSection :results="results" />
+    <ContactSection />
     <PageFooter />
   </main>
 </template>
@@ -13,6 +14,7 @@ import TeamSection from "~/components/TeamSection"
 import HeroSection from "~/components/HeroSection.vue"
 import PageFooter from "~/components/PageFooter"
 import PageHeader from "~/components/PageHeader"
+import ContactSection from "../components/ContactSection"
 import GetDataFromSpreadsheet from "~/modules/GetDataFromSpreadsheet"
 
 export default {
@@ -21,6 +23,7 @@ export default {
     TeamSection,
     HeroSection,
     PageFooter,
+    ContactSection,
     PageHeader
   },
   async asyncData() {
