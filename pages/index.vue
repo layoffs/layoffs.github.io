@@ -3,8 +3,9 @@
     <PageHeader/>
     <HeroSection/>
     <TeamSection :team="team" />
-    <ResultsSection :results="results" />
-    <ContactSection />
+    <ResultsSection :results="results" />    
+    <ShareSection />
+    <ContactSection />    
     <PageFooter />
   </main>
 </template>
@@ -14,7 +15,8 @@ import TeamSection from "~/components/TeamSection"
 import HeroSection from "~/components/HeroSection.vue"
 import PageFooter from "~/components/PageFooter"
 import PageHeader from "~/components/PageHeader"
-import ContactSection from "../components/ContactSection"
+import ContactSection from "~/components/ContactSection"
+import ShareSection from "~/components/ShareSection"
 import GetDataFromSpreadsheet from "~/modules/GetDataFromSpreadsheet"
 
 export default {
@@ -24,7 +26,8 @@ export default {
     HeroSection,
     PageFooter,
     ContactSection,
-    PageHeader
+    PageHeader,
+    ShareSection
   },
   async asyncData() {
     const dateToText = (date) => {
